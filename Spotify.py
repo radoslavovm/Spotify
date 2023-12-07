@@ -2,8 +2,8 @@ import connection
 import requests
 
 conn = connection.r
-access_token = 'BQAMxh5jIYAcBjTJ6pfK99cx4XNEYtfxoRWMWiAQ-P_Ekn-o4O48z-AtnJTiDyx13XTUOVqRv1GvuIWm4GZ89JJxwsfTFfnJ2x0OSWkYNVvbFGATqJ4'
-token_type = 'Bearer'
+token_type = conn.json()['token_type']
+access_token = conn.json()['access_token']
 
 def get_artist():
 
@@ -16,3 +16,10 @@ def get_artist():
 
 get_artist()
 
+# take a set of songs and organize them into new playlists based on their bpm 
+
+# get a playlist 
+
+# get song bpm 
+
+# add song to new playlist 
