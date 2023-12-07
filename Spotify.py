@@ -20,6 +20,6 @@ get_artist()
 
 # get a playlist 
 
-# get song bpm 
+# get song tempo 
 
 # add song to new playlist 
